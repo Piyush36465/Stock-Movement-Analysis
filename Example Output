@@ -1,0 +1,40 @@
+ Example Output
+
+ Fetched Reddit Posts with Sentiment Scores
+
+| Text                                  | Timestamp           | Sentiment  |
+|---------------------------------------|---------------------|------------|
+| AAPL is looking strong this quarter! | 2024-12-06 10:15:00 | 0.45       |
+
+ Merged Data (Reddit + Stock)
+
+| Date       | Text                                   | Sentiment | Close   | Label |
+|------------|----------------------------------------|-----------|---------|-------|
+| 2024-12-05 | AAPL will skyrocket!                  | 0.8       | 174.30  | 1     |
+
+ Model Accuracy: 0.85
+
+ Predictions on Latest Posts
+
+| Text                                  | Sentiment | Prediction |
+|---------------------------------------|-----------|------------|
+| AAPL is looking strong this quarter! | 0.45      | 1          |
+
+---
+
+ Limitations
+
+- The model is simplistic and relies solely on sentiment for prediction.
+- Small datasets may lead to inaccurate predictions.
+- Sentiment does not always correlate with stock price movements.
+
+---
+
+ Future Improvements
+
+- Incorporate additional features (e.g., trading volume, technical indicators).
+- Expand the model to handle multiple stock tickers.
+- Enhance sentiment analysis with contextual embedding models (e.g., BERT).
+
+
+
